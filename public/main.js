@@ -9,7 +9,7 @@ form.addEventListener('submit',(e) => {
    msg1.textContent = 'Loading...'
    msg2.textContent = ''
 
-   fetch('http://api.openweathermap.org/data/2.5/weather?q='+loc.value+'&appid=928ca37137cadf95ccfa6139dae1490a').then(response => {
+   fetch('https://api.openweathermap.org/data/2.5/weather?q='+loc.value+'&appid=928ca37137cadf95ccfa6139dae1490a').then(response => {
     response.json().then(data => {
        console.log('Hello');
            if(data.cod=="404"){
