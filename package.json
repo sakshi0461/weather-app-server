@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-     "start":"node app.js"
+    "start": "node app.js",
+    "dev":"nodemon app.js -e js,hbs"
   },
   "author": "",
   "license": "ISC",
@@ -12,8 +13,10 @@
     "experss": "0.0.1-security",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "nodemon": "^2.0.7",
     "path": "^0.12.7",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
