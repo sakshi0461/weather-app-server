@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const geocoder = require('./geocoder');
 
 const app = express()
+const PORT = process.env.PORT || 3000;
 
 const viewslink = path.join(__dirname, '/template/views')
 const partiallink = path.join(__dirname,'/template/partials')
@@ -70,6 +71,8 @@ app.get('*',(req,res) => {
         author:'Sakshi Gupta'
     });
 })
-app.listen(3000 , () => {
+
+
+app.listen(PORT , () => {
     console.log('Server is running')
 })
